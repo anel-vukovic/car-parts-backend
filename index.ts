@@ -1,11 +1,10 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: '127.0.0.1',
   user: 'root',
   password: '',
   database: 'car_parts_database',
-  connectTimeout: 60000,
 });
 
 connection.connect((err) => {
