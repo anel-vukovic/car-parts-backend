@@ -1,3 +1,5 @@
+import {Test} from "./src/test";
+
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
@@ -20,6 +22,7 @@ module.exports = connection;
 const express = require('express');
 const app = express();
 const port = 3306;
+Test()
 
 app.get('/', (req, res) => {
   res.send('Hello, World!');
